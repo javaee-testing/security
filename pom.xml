@@ -1,0 +1,67 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.samaxes.javaee</groupId>
+    <artifactId>security</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>Java EE security testing sample</name>
+    <description>Testing secure EJB with Arquillian and JUnit.</description>
+    <url>https://github.com/javaee-testing/security</url>
+    <inceptionYear>2014</inceptionYear>
+    <organization>
+        <name>samaxes</name>
+        <url>http://www.samaxes.com/</url>
+    </organization>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>samaxes</id>
+            <name>Samuel Santos</name>
+            <url>http://www.samaxes.com/</url>
+            <roles>
+                <role>Project Owner</role>
+                <role>Developer</role>
+            </roles>
+            <timezone>0</timezone>
+        </developer>
+    </developers>
+
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/javaee-testing/security/issues</url>
+    </issueManagement>
+    <scm>
+        <connection>scm:git:git://github.com/javaee-testing/security.git</connection>
+        <developerConnection>scm:git:git@github.com:javaee-testing/security.git</developerConnection>
+        <url>https://github.com/javaee-testing/security</url>
+    </scm>
+
+    <build>
+        <finalName>security</finalName>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>7.0</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+        <skipTests>true</skipTests>
+    </properties>
+</project>
