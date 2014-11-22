@@ -8,7 +8,7 @@
     <packaging>jar</packaging>
 
     <name>Java EE security testing sample</name>
-    <description>Testing secure EJB with Arquillian and JUnit.</description>
+    <description>Testing secured EJBs with Arquillian.</description>
     <url>https://github.com/javaee-testing/security</url>
     <inceptionYear>2014</inceptionYear>
     <organization>
