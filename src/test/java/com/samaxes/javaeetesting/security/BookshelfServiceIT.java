@@ -126,8 +126,8 @@ public class BookshelfServiceIT {
 
         try {
             // Read access should be allowed
-            @SuppressWarnings("unused")
             List<Book> books = bookshelfService.getBooks();
+            Assert.assertEquals("BookshelfService.getBooks()", 0, books.size());
         } catch (EJBAccessException e) {
             Assert.fail("Read access should be allowed");
         }
